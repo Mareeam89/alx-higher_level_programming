@@ -1,3 +1,2 @@
 #!/bin/bash
-# Script that makes a request to causes an specific response
-curl -sL 0.0.0.0:5000/catch_me_3 -X PUT -H "Origin:HolbertonSchool"
+curl -s -X PUT -H "Origin: You got me!" 0.0.0.0:5000/catch_me
