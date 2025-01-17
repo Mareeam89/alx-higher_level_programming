@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const addMeMaybe = (number, theFunction) => {
-  theFunction(number + 1);
+exports.addMeMaybe = function (number, theFunction) {
+  number += 1;  // Increment the number
+  theFunction(number);  // Call the function with the incremented number
 };
 
-module.exports = { addMeMaybe };
